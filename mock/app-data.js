@@ -143,12 +143,12 @@ const menus = [
   
   {
     id: 8,
-    title: "哈哈哈",
+    title: "张天博",
     icon: "icon-home",
     url: "/chart",
     parent: null,
-    desc: "哈哈哈",
-    sorts: 2,
+    desc: "张天博",
+    sorts:2,
     conditions: 1,
   },
 ];

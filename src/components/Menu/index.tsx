@@ -114,6 +114,8 @@ export default function MenuCom(props: Props): JSX.Element {
       return a.sorts - b.sorts;
     });
     const sourceData: Menu[] = dataToJson(undefined, d) || [];
+    console.log("ddddddddddddddddddddddddddddd")
+    console.log(sourceData);
     const treeDom = makeTreeDom(sourceData);
     return treeDom;
   }, [props.data, dataToJson, makeTreeDom]);

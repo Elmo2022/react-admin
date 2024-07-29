@@ -35,6 +35,7 @@ function BasicLayoutCom(): JSX.Element {
   const dispatch = useDispatch<Dispatch>();
   const navigate = useNavigate();
   const userinfo = useSelector((state: RootState) => state.app.userinfo);
+  console.log("userinfo", userinfo);
   const [collapsed, setCollapsed] = useState(false); // 菜单栏是否收起
 
   // 退出登录

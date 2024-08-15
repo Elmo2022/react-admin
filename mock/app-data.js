@@ -72,11 +72,11 @@ const users = [
 const menus = [
   {
     id: 1,
-    title: "首页sss",
+    title: "首页",
     icon: "icon-home",
     url: "/home",
     parent: null,
-    desc: "首页sss",
+    desc: "首页",
     sorts: 0,
     conditions: 1,
   },
@@ -132,11 +132,11 @@ const menus = [
   },
   {
     id: 7,
-    title: "哈哈哈哈管理",
+    title: "图表管理",
     icon: "icon-appstore",
-    url: "/system/hh",
-    parent: 2,
-    desc: "系统管理/哈哈管理",
+    url: "/chartsadmin",
+    parent: null,
+    desc: "哈哈管理",
     sorts: 4,
     conditions: 1,
   },
@@ -320,6 +320,15 @@ const powers = [
     sorts: 2,
     conditions: 1,
   },
+  {
+    id: 18,
+    menu: 7,
+    title: "删除",
+    code: "menu:del",
+    desc: "哈哈哈哈哈哈哈",
+    sorts: 2,
+    conditions: 1,
+  },
 ];
 // 所有的角色数据
 const roles = [
@@ -336,6 +345,7 @@ const roles = [
       { menuId: 4, powers: [6, 7, 8, 9, 18] },
       { menuId: 5, powers: [10, 11, 12, 13] },
       { menuId: 6, powers: [14, 15, 16, 17] },
+      { menuId: 7, powers: [18] },
     ],
   },
   {
@@ -351,6 +361,7 @@ const roles = [
       { menuId: 4, powers: [6, 7, 8, 18] },
       { menuId: 5, powers: [10, 11, 12] },
       { menuId: 6, powers: [14, 15, 16] },
+      { menuId: 7, powers: [18] },
     ],
   },
   {
